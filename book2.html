@@ -21,8 +21,8 @@
             headers: { Authorization: "KakaoAK 8f3cbb52a936d586a1da928573575015" }
         })
         .done(function (msg) {
-                    //console.log(msg.documents[0].title);
-                    //console.log(msg.documents[0].thumbnail);
+                    console.log(msg.documents[0].title);
+                    console.log(msg.documents[0].thumbnail);
                     $( "p" ).append( "<strong>" + msg.documents[0].title + "</strong>" );
                     $( "p" ).append( "<img src='" + msg.documents[0].thumbnail + "'/>" );
                 
