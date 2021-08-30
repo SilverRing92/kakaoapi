@@ -14,7 +14,7 @@
     <button id="searchBtn">검색</button>
     <p></p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         $(function () {
             $("#searchBtn").click(function() {
                 $.ajax({
@@ -29,8 +29,8 @@
                     $( "p" ).append( "<strong>" + msg.documents[0].title + "</strong>" );
                     $( "p" ).append( "<img src='" + msg.documents[0].thumbnail + "'/>" );
                 });
-            });
-        //});
+            })
+        });
          
     </script>
 </body>
