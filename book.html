@@ -21,7 +21,7 @@
                     method: "GET",
                     url: "https://dapi.kakao.com/v3/search/book?target=title",
                     data: { query: $("#bookNameInput").val() },
-                    headers: { Authorization: "KakaoAK {REST API}" }
+                    headers: { Authorization: "KakaoAK {5VH6b0c5TQcydrYCPJw3A9mmrmZsSx7RBhPCPgopdSkAAAF7lcnLmQ}" }
                 })
                 .done(function (msg) {
                     console.log(msg.documents[0].title);
